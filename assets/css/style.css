@@ -1,0 +1,123 @@
+/*============= Fonts =============*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Questrial&display=swap");
+
+/*============= Body =============*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*============= Selection =============*/
+::selection {
+  color: var(--primaryColor);
+  background: var(--secondaryColor);
+}
+
+/*============= Variables =============*/
+:root {
+  --color: #fffefa;
+  --colorWhite: #ffffff;
+  --backgroundColor: #dc5757;
+
+  --fontOne: "Cormorant Infant", serif;
+  --fontTwo: "Questrial", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/*============= 970*250 =============*/
+
+.wrapper {
+  width: 970px;
+  height: 250px;
+  background: var(--backgroundColor);
+  position: relative;
+  padding: 22px 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+.logo {
+  position: relative;
+  z-index: 10;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.logo a {
+  color: var(--color);
+  text-align: center;
+  font-family: var(--fontTwo);
+  font-size: 26.63px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.218px; /* 94.7% */
+  letter-spacing: -0.894px;
+  /* text-decoration: underline; */
+}
+
+/* .wrapper img {
+  width: 620px;
+  height: auto;
+  top: -75px;
+  left: 140px;
+  position: absolute;
+} */
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+  top: -3px;
+  left: 15px;
+  position: absolute;
+}
+
+.title {
+  width: 434px;
+  color: var(--color);
+  font-family: var(--fontTwo);
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.title li {
+  line-height: 64.5px; /* 70.109% */
+}
+
+.title li:nth-child(1) {
+  /* line-height: 64.5px; 70.109% */
+}
+.title li:nth-child(2) {
+  line-height: 61.5px;
+}
+.title li:nth-child(3) {
+  line-height: 73.63px;
+}
+
+a.btn {
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+  color: var(--colorWhite);
+  text-align: center;
+  font-family: var(--fontOne);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+
+  letter-spacing: -1.3px;
+}
